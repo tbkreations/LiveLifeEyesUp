@@ -1,0 +1,42 @@
+.sponsorContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.sponsorContent {
+    color: rgb(220, 59, 254);
+    text-align: center;
+}
+
+#sponsorHeading {
+    font-style: oblique;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 481px) {
+    #sponsorHeading {
+        font-size: 10vmin;
+    }
+    .sponsorContent {
+        font-size: 5vmin;
+    }
+}
+
+@media (min-width: 767px) {
+    #sponsorHeading {
+        font-size: 8vmin;
+        margin: 1% 0 3% 0;
+    }
+    .purposeContent {
+        font-size: 5vmin;
+        width: 75%;
+    }
+
+    .sponsorItem {
+        list-style: none;
+    }
+
+    .sponsorContent {
+        font-size: 5vmin;
+    }
+}

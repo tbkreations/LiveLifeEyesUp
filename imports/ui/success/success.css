@@ -1,0 +1,96 @@
+.constructionHeading {
+    color: rgb(220, 59, 254);
+    text-align: center;
+}
+
+.checkBack {
+    color: rgb(220, 59, 254);
+    text-align: center;
+}
+
+.successFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#successIcon {
+    color: #90f7f1;
+}
+
+.universalBtn {
+    background-color: white;
+    border: 3px solid rgb(220, 59, 254);
+    color: black;
+    border-radius: 20px;
+    padding: 1.25%;
+}
+
+.countSuffix {
+    position: relative;
+    top: 15px;
+    margin: 10px;
+    font-style: oblique;
+    color:rgb(220, 59, 254);
+}
+
+#subAmount {
+    color: #90f7f1;
+}
+
+@keyframes buttonHover {
+    100% {
+        color: black;
+        background-color: #49f1e9;
+        ;
+        box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .75);
+    }
+}
+
+.universalBtn:hover {
+    animation: buttonHover .5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+/* For Phones (Small Devices) */
+@media (min-width: 320px) and (max-width: 481px) {
+    .universalBtn {
+        width: 40vw;
+        font-size: 4.8vmin;
+        margin: 15px;
+    }
+
+    #successIcon {
+        font-size: 20vw;
+    }
+
+    .checkBack {
+        font-size: 7vmin;
+    }
+
+    .constructionHeading {
+        font-size: 11vmin;
+    }
+}
+
+/* For Most Computers/Laptops (Medium Screens) */
+@media (min-width: 767px) {
+    .universalBtn {
+        width: 16vw;
+        font-size: 2.5vmin;
+        margin: 15px;
+    }
+
+    #successIcon {
+        font-size: 5vw;
+    }
+
+    .checkBack {
+        font-size: 5vmin;
+    }
+
+    .constructionHeading {
+        font-size: 5vmin;
+    }
+}

@@ -1,22 +1,14 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
-
 import './main.html';
+import './main.css';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
-
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
-
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
-});
+import '../lib/routes.js';
+import '../imports/ui/landingPage/landingPage.js';
+import '../imports/ui/nav/nav.js';
+import '../imports/ui/survey-results/surveyResults.js';
+import '../imports/ui/ourPurpose/ourPurpose.js';
+import '../imports/ui/otherSources/otherSources.js';
+import '../imports/ui/aboutUs/aboutUs.js';
+import '../imports/ui/construction/construction.js';
+import '../imports/ui/joinCampaign/joinCampaign.js';
+import '../imports/ui/success/success.js';
+BlazeLayout.setRoot('body');

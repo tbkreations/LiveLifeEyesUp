@@ -1,0 +1,34 @@
+.purposeContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.purposeContent {
+    color: rgb(220, 59, 254);
+    text-align: center;
+}
+
+#purposeHeading {
+    font-style: oblique;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 481px) {
+    #purposeHeading {
+        font-size: 10vmin;
+    }
+    .purposeContent {
+        font-size: 5vmin;
+    }
+}
+
+@media (min-width: 767px) {
+    #purposeHeading {
+        font-size: 8vmin;
+        margin: 1%;
+    }
+    .purposeContent {
+        font-size: 5vmin;
+        width: 75%;
+    }
+}

@@ -1,0 +1,47 @@
+.flexBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.downloadContainer {
+    flex-direction: row;
+}
+
+.downloadLabel {
+    color: #90f7f1;
+}
+
+.pageTitle {
+    color: black;
+    margin: 0 0 3% 0;
+    font-style: oblique;
+    text-align: center;
+}
+
+i.fa.fa-download {
+    color: rgb(220, 59, 254);
+}
+
+@media (min-width: 320px) and (max-width: 481px) {
+    .downloadLabel {
+        font-size: 6vw;
+    }
+
+    .pageTitle {
+        font-size: 8vw;
+    }
+}
+
+@media (min-width: 767px) {
+    .downloadLabel {
+        font-size: 2vw;
+        color: #90f7f1;
+        margin: 10px;
+    }
+
+    .pageTitle {
+        font-size: 8vmin;
+        margin: 0 0 3% 0;
+    }
+}

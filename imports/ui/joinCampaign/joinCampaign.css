@@ -1,0 +1,155 @@
+/* Default Styles */
+#signUpContainer {
+    margin: auto;
+    width: 80vw;
+    height: auto;
+    margin-bottom: 10vh;
+}
+
+.signupForm {
+    display: block;
+    background-color: #90f7f1;
+    border: 2px solid rgb(220, 59, 254);
+    border-radius: 20px;
+}
+
+.inputLabel {
+    display: block;
+    color: rgb(232, 142, 250);
+}
+
+.loginInput {
+    width: 75%;
+}
+
+#cfLogo {
+    position: relative;
+}
+
+::placeholder {
+    color: lightslategray;
+}
+
+.registerButton:hover {
+    animation: buttonHover .5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.registerButton {
+    background-color: white;
+    border: 3px solid rgb(220, 59, 254);
+    color: black;
+    border-radius: 20px;
+    padding: 1.25%;
+    position: relative;
+    left: 40% !important;
+    top: 50%;
+}
+
+.pageTitles {
+    color: black;
+    text-align: center;
+}
+
+.pageSubTitles {
+    font-size: 3vmin;
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+
+.firstnameInput {
+    margin: 2%;
+}
+
+.lastnameInput {
+    margin: 2%;
+}
+
+.emailInput {
+    margin: 2%;
+}
+
+.locationInput {
+    margin: 2%;
+}
+
+@keyframes buttonHover {
+    100% {
+        color: black;
+        background-color: #49f1e9;
+        ;
+        box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .75);
+    }
+}
+
+.loginInput:focus {
+    border-bottom: 1px solid rgb(232, 142, 250) !important;
+}
+
+/* For Phones (Small Devices) */
+@media (min-width: 320px) and (max-width: 481px) {
+
+    .registerButton {
+        font-size: 5vmin !important;
+        margin: 3% !important;
+    }
+
+    .pageTitles {
+        font-size: 6vmin !important;
+        margin-bottom: 5% !important;
+    }
+
+    .pageSubTitles {
+        margin-bottom: 5% !important;
+    }
+
+    #cfLogo {
+        top: 20px !important;
+        left: -10px !important;
+        width: 20% !important;
+    }
+
+    .inputLabel {
+        font-size: 3.5vw !important;
+        margin: 2px !important;
+    }
+
+    .loginInput {
+        font-size: 3vw !important;
+        margin: 0 0 5px 10px !important;
+    }
+}
+
+/* For Most Computers/Laptops (Medium Screens) */
+@media (min-width: 767px) {
+
+    .registerButton {
+        font-size: 3vmin !important;
+        margin: 1% !important;
+    }
+
+    .inputLabel {
+        font-size: 1.5vw !important;
+        margin: 5px 0 0 0 !important;
+    }
+
+    .loginInput {
+        font-size: 1vw !important;
+        margin: 0 0 10px 10px !important;
+        /* width: 650px !important; */
+    }
+
+    .pageTitles {
+        font-size: 6vmin !important;
+        margin-bottom: 4% !important;
+        margin-top: 0 !important;
+    }
+
+    #cfLogo {
+        top: 25px !important;
+        left: -10px !important;
+        width: 12% !important;
+    }
+}

@@ -1,0 +1,31 @@
+<template name="navBar">
+    <img class="navLogo" src="wpLogo.jpg" onclick="FlowRouter.go('/');">
+
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li id="ourPurpose" class="navItem"><a>Our Purpose</a></li>
+                <li id="surveyResults" class="navItem"><a>Survey & Results</a></li>
+                <li id="resources" class="navItem"><a>Resources</a></li>
+                <li id="sponsors" class="navItem"><a>Sponsors</a></li>
+                <li id="campaign" class="navItem"><a>Campaign</a></li>
+                <li id="instagram" class="navItem"><i class="fa fa-instagram"></i></li>
+                <li id="twitter" class="navItem"><i class="fa fa-twitter"></i></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul id="slide-out" class="side-nav">
+        <li id="ourPurpose" class="navItem"><a id="purposeLink">Our Purpose</a></li>
+        <li id="surveyResults" class="navItem"><a id="surveyLink">Survey & Results</a></li>
+        <li id="resources" class="navItem"><a id="resourceLink">Resources</a></li>
+        <li id="sponsors" class="navItem"><a id="sponsorLink">Sponsors</a></li>
+        <li id="campaign" class="navItem"><a id="campaignLink">Campaign</a></li>
+        <li id="instagram" class="navItem"><i class="fa fa-instagram"></i></li>
+        <li id="twitter" class="navItem"><i class="fa fa-twitter"></i></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+</template>

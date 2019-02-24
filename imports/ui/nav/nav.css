@@ -1,0 +1,200 @@
+nav {
+    background-color: white;
+    width: fit-content;
+    border-radius: 10px;
+    position: relative;
+}
+
+nav ul a {
+    font-size: 2rem;
+    color: black;
+    display: block;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+nav .brand-logo {
+    color: black;
+}
+
+nav li a:hover {
+    animation: navHover .5s;
+    animation-fill-mode: forwards;
+}
+
+nav ul a {
+    height: 100%;
+}
+
+#mobilenavBtn:hover {
+    cursor: pointer;
+}
+
+#nav-mobile {
+    height: 100%;
+}
+
+.nav-wrapper {
+    border: 3px solid rgb(220, 59, 254);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+@keyframes navHover {
+    100% {
+        background-color: rgb(228, 159, 228);
+        box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, .75);
+    }
+}
+
+.navLogo:hover {
+    cursor: pointer;
+}
+
+.navItem {
+    height: 58px;
+}
+
+i.fa.fa-instagram {
+    color: #90f7f1;
+    font-size: 3vw;
+    height: 100%;
+    padding: 0 15px 0 15px;
+}
+
+i.fa.fa-instagram:hover {
+    cursor: pointer;
+}
+
+i.fa.fa-twitter {
+    color: #90f7f1;
+    font-size: 3vw;
+    height: 100%;
+    padding: 0 15px 0 15px;
+}
+
+i.fa.fa-twitter:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 481px) {
+    nav {
+        background-color: white;
+        float: left;
+        height: 65px;
+        top: 35px;
+    }
+
+    .navLogo {
+        width: 35%;
+        position: relative;
+        left: 55px;
+    }
+
+    i.material-icons {
+        font-size: 55px !important;
+        margin: 5px;
+        color: #90f7f1;
+        text-align: center;
+    }
+
+    #purposeLink {
+        cursor: pointer;
+    }
+
+    #surveyLink {
+        cursor: pointer;
+    }
+
+    #resourceLink {
+        cursor: pointer;
+    }
+
+    #sponsorLink {
+        cursor: pointer;
+    }
+
+    #campaignLink {
+        cursor: pointer;
+    }
+
+    i.fa.fa-instagram {
+        color: #90f7f1;
+        font-size: 25vw !important;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        cursor: pointer;
+        position: fixed;
+        left: 15px;
+        top: 530px;
+        padding: 0px 30px 0 30px;
+    }
+
+    i.fa.fa-twitter {
+        color: #90f7f1;
+        flex-direction: row;
+        font-size: 25vw !important;
+        display: flex;
+        height: 100%;
+        cursor: pointer;
+        top: 530px;
+        left: 150px;
+        position: fixed;
+        padding: 0 30px 0 30px;
+    }
+
+    .side-nav li>a {
+        color: rgba(0, 0, 0, 0.87);
+        display: block;
+        font-size: 25px !important;
+        font-weight: 500;
+        margin: 35px 0 0 20px;
+    }
+
+    .side-nav {
+        height: 100%;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 992px) {
+    /* nav ul a {
+        font-size: 1.8vw !important;
+        padding: 0px 15px !important;
+    }
+
+    nav {
+        left: -5px;
+    } */
+
+    .nav-wrapper {
+        display: none;
+    }
+
+    .navLogo {
+        width: 10%;
+    }
+}
+
+@media (min-width: 993px) {
+    nav {
+        background-color: white;
+        float: right;
+        width: fit-content;
+        border-radius: 10px;
+        position: relative;
+        left: -30px;
+    }
+
+    nav ul a {
+        font-size: 2vw;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .navLogo {
+        width: 10%;
+    }
+}

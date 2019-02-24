@@ -1,0 +1,39 @@
+<template name="campaign">
+
+
+    {{> navBar}}
+    <div id="signUpContainer">
+        <form id="signUp" class="signupForm">
+                <p class="pageTitles"><img class="navLogo" id="cfLogo" src="wpLogo.jpg" onclick="FlowRouter.go('/');">Join The Campaign!</p>
+                <p class="pageSubTitles">Stay Up To Date With The Campaign!</p>
+            <div class="emailInput">
+                <label class="inputLabel">Email</label>
+                <input name="email" class="loginInput" type="email" placeholder="Email Address">
+            </div>
+
+            <div class="firstnameInput">
+                <label class="inputLabel">First Name</label>
+                <input name="firstname" class="loginInput" type="text" placeholder="First Name">
+            </div>
+
+            <div class="lastnameInput">
+                <label class="inputLabel">Last Name</label>
+                <input name="lastname" class="loginInput" type="text" placeholder="Last Name">
+            </div>
+
+            <div class="locationInput">
+                <label class="inputLabel">City</label>
+                <input name="city" class="loginInput" type="text" placeholder="City">
+            </div>
+
+            <div class="locationInput">
+                <label class="inputLabel">State</label>
+                <input name="state" class="loginInput" type="text" placeholder="State">
+            </div>
+
+            <button type="submit" class="registerButton">Sign Up</button>
+
+        </form>
+    </div>
+
+</template>
